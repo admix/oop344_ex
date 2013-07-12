@@ -1,0 +1,3 @@
+In this exercise you will be correcting the inheritance of the project found here. You will need to use templates to change how the classes inherit from one another to allow them to compile and run correctly. You are not to change the interfaces (files prefaced with a lowercase 'i'), as they are as they are supposed to be.
+
+Please blog about the changes you've made to allow this to work and any potential pitfalls of the changes you have made.
