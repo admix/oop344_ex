@@ -4,18 +4,19 @@
 #include "iBell.h"
 #include "SoundMaker.h"
 
-class Bell : public SoundMaker, public iBell
+template <class T = iBell>
+class Bell : public SoundMaker<T>
    {
    private:
    protected:
    public:
-      Bell() : SoundMaker() {sound = "Ding"}
+      Bell() : SoundMaker<T>() {this->sound = "Ding";}
       void switchHammer() 
          {
-         if(sound == "Ding")
-            sound = "Dong";
+         if(this->sound == "Ding")
+            this->sound = "Dong";
          else
-            sound = "Ding";
+            this->sound = "Ding";
          }
    };
 

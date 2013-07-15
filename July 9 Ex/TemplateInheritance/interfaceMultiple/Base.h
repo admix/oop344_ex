@@ -2,8 +2,8 @@
 #define __BASE__
 
 #include "iBase.h"
-
-class Base : public iBase
+template <class T = iBase>
+class Base : public T
    {
    private:
       static unsigned int count;

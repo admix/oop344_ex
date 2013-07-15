@@ -5,15 +5,18 @@
 #include <iostream>
 #include "iSoundMaker.h"
 #include "Base.h"
-
-class SoundMaker : public Base, public iSoundMaker
+template <class T = iSoundMaker>
+class SoundMaker : public Base<T>
    {
    private:
    protected:
       std::string sound;
    public:
-      SoundMaker() : Base(), sound("Bang") {}
-      void playSound() {std::cout << sound << "\n";}
+      SoundMaker() : Base<T>(), sound("Bang") {}
+      void playSound() 
+	  {
+		  std::cout << sound << "\n";
+	  }
    };
 
 

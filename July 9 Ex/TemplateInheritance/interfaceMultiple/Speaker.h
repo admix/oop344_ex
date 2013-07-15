@@ -3,16 +3,16 @@
 
 #include "iSpeaker.h"
 #include "SoundMaker.h"
-
-class Speaker : public SoundMaker, public iSpeaker
+template <class T = iSpeaker>
+class Speaker : public SoundMaker<>
    {
    private:
    protected:
    public:
-      Speaker() : SoundMaker() {}
+      Speaker() : SoundMaker<>() {}
       void increaseVolume()
          {
-         sound += "!";
+         this->sound += "!";
          }
    };
 
