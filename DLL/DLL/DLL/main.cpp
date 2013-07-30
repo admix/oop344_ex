@@ -10,9 +10,10 @@ int main(int argc, char* argv[]){
   //save
   DLList dl;
   dl.insertAfter(10);
-  dl.insertBefore(20);
+  dl.goNext();
+  //dl.insertBefore(20);
   dl.insertAfter(30);
-  dl.insertBefore(40);
+  //dl.insertBefore(40);
   /*dl.goHead();
   dl.goNext();
   dl.insertAfter(5);
