@@ -7,7 +7,7 @@ using namespace std;
 void w1(){
   int a = 12345;
   int b = ~a + 1;
-  cout<<"b = "<< b << endl;
+  cout<<"~a = "<< ~a << endl;
   cout<< b + a<<endl;
 }
 void w2(unsigned int a, int b){
